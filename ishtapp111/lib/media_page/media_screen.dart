@@ -16,45 +16,35 @@ class _MediaScreenState extends State<MediaScreen> {
   @override
   Widget build(BuildContext context) {
     return ListView(
-        padding: const EdgeInsets.only(top: 200),
-        children: [
-                            TextButton(onPressed: ()
-                              {
-           Navigator.of(context).pushNamed('music_palyer');
-            
-                            },
-                             child: Container(
-                            decoration: GreenDecoration,
-  height: 30,
-              
-  child: const Text(
-  ' Музыка ',
-    textAlign: TextAlign.center,
-    style: WhiteTextStyle, 
-  ),  
-
-                             )
-                             ),
-                                                         TextButton(onPressed: ()
-                              {
-           Navigator.of(context).pushNamed('radio_page');
-            
-                            },
-                             child: Container(
-                            decoration: GreenDecoration,
-  height: 30,
-              
-  child: const Text(
-  ' Радио ',
-    textAlign: TextAlign.center,
-    style: WhiteTextStyle, 
-  ),  
-
-                             )
-                             ),
-                             
-
-        ],
-      );  
+      padding: const EdgeInsets.only(top: 200),
+      children: [
+        TextButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('music_palyer');
+            },
+            child: Container(
+              decoration: GreenDecoration,
+              height: 30,
+              child: const Text(
+                ' Музыка ',
+                textAlign: TextAlign.center,
+                style: WhiteTextStyle,
+              ),
+            )),
+        TextButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('radio_page');
+            },
+            child: Container(
+              decoration: GreenDecoration,
+              height: 30,
+              child: const Text(
+                ' Радио ',
+                textAlign: TextAlign.center,
+                style: WhiteTextStyle,
+              ),
+            )),
+      ],
+    );
   }
 }

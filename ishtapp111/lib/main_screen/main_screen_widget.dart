@@ -4,7 +4,6 @@ import 'package:ishtapp111/media_page/media_screen.dart';
 //import '../music_page/music_page.dart';
 import '../search_list/search_list.dart';
 
-
 class MainScreenWidget extends StatefulWidget {
   const MainScreenWidget({super.key});
 
@@ -13,7 +12,7 @@ class MainScreenWidget extends StatefulWidget {
 }
 
 class _MainScreenWidgetState extends State<MainScreenWidget> {
-int _selectedTab = 0;
+  int _selectedTab = 0;
 // static const List<Widget> _widgetOptions = <Widget> [
 //   SeachList(),
 //   Text('Избранное'),
@@ -22,17 +21,16 @@ int _selectedTab = 0;
 //   MusicPlayer (),
 // ];
 
-
-void onSelectedTab(int index){
-  if (_selectedTab == index) return;
-  setState(() {
-    _selectedTab = index;
-  });
-}
+  void onSelectedTab(int index) {
+    if (_selectedTab == index) return;
+    setState(() {
+      _selectedTab = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-      return Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: const Text('ishtapp'),
         actions: <Widget>[
@@ -70,19 +68,16 @@ void onSelectedTab(int index){
       body: IndexedStack(
         index: _selectedTab,
         children: const [
-            SeachList(),
-            Text('Избранное'),
-            Text('Чат'),
-            Text('Обучение'),
-            MediaScreen(),
+          SeachList(),
+          Text('Избранное'),
+          Text('Чат'),
+          Text('Обучение'),
+          MediaScreen(),
         ],
-
       ),
-      
       bottomNavigationBar: BottomNavigationBar(
-  type: BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
-          
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Поиск',
@@ -91,25 +86,22 @@ void onSelectedTab(int index){
             icon: Icon(Icons.thumb_up_alt_outlined),
             label: 'Избранное',
           ),
-       
           BottomNavigationBarItem(
             icon: Icon(Icons.message_outlined),
             label: 'Чат',
           ),
-          
           BottomNavigationBarItem(
             icon: Icon(Icons.book),
             label: 'Обучение',
           ),
-           BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.play_circle_filled_rounded),
             label: 'Медиа',
           )
         ],
-       currentIndex: _selectedTab,
-       onTap: onSelectedTab,
+        currentIndex: _selectedTab,
+        onTap: onSelectedTab,
       ),
     );
-
   }
 }
