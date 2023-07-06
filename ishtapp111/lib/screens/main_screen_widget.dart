@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ishtapp111/media_page/media_screen.dart';
+import 'package:ishtapp111/screens/media_screen.dart';
 
 //import '../music_page/music_page.dart';
-import '../search_list/search_list.dart';
+import 'search_screen.dart';
 
 class MainScreenWidget extends StatefulWidget {
   const MainScreenWidget({super.key});

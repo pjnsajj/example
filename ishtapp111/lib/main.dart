@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:ishtapp111/media_page/media_screen.dart';
-import 'package:ishtapp111/media_page/music_page/music_player.dart';
-import 'package:ishtapp111/media_page/radio_page/hit_fm.dart';
-import 'package:ishtapp111/media_page/radio_page/kg_obondoru.dart';
-import 'package:ishtapp111/media_page/radio_page/evropa_plus_kg.dart';
-import 'package:ishtapp111/media_page/radio_page/radio_main_screen.dart';
-import 'package:ishtapp111/media_page/radio_page/retro_fm.dart';
-import 'package:ishtapp111/media_page/radio_page/suyunchu_fm.dart';
+import 'package:ishtapp111/screens/media_screen.dart';
+import 'package:ishtapp111/music_page/music_player.dart';
+import 'package:ishtapp111/radio_page/hit_fm.dart';
+import 'package:ishtapp111/radio_page/kg_obondoru.dart';
+import 'package:ishtapp111/radio_page/evropa_plus_kg.dart';
+import 'package:ishtapp111/radio_page/radio_main_screen.dart';
+import 'package:ishtapp111/radio_page/retro_fm.dart';
+import 'package:ishtapp111/radio_page/suyunchu_fm.dart';
 
-import 'main_screen/main_screen_widget.dart';
-import 'media_page/music_page/music_menu_list.dart';
-import 'media_page/music_page/music_page.dart';
-import 'start_screen/auth_list.dart';
-import 'start_screen/register_list.dart';
-import 'start_screen/start_screen_widget.dart';
+import 'screens/main_screen_widget.dart';
+import 'music_page/music_menu_list.dart';
+import 'music_page/music_page.dart';
+import 'screens/auth_screen.dart';
+import 'screens/register_screen.dart';
+import 'screens/start_screen_widget.dart';
 
 
 void main() {

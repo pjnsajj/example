@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ishtapp111/media_page/music_page/music_search_page.dart';
+import 'package:ishtapp111/music_page/music_search_page.dart';
 
 class MusicMenuList extends StatefulWidget {
   const MusicMenuList({super.key});
